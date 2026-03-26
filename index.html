@@ -1,156 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Landing</title>
 
-<title>NeXsv | Red de Negocios para Padres en El Salvador</title>
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-<!-- SEO -->
-<meta name="description" content="Red de negocios exclusiva para padres de colegios privados en El Salvador. Conecta, compra y crece con NeXsv.">
-<meta name="keywords" content="negocios El Salvador, padres emprendedores, networking, comunidad de negocios">
-<meta name="author" content="NeXsv">
+    /* COLORES DE MARCA */
+    :root {
+      --azul-principal: #2A4B7C;
+      --verde: #34A88E;
+      --amarillo: #F5B041;
+      --gris-fondo: #F4F6F8;
+      --blanco: #FFFFFF;
+      --texto: #1f2937;
+    }
 
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #F4F6F8;
-}
+    body {
+      background-color: var(--gris-fondo);
+      color: var(--texto);
+    }
 
-/* NAV */
-nav {
-    background-color: #2A4B7C;
-    text-align: center;
-    padding: 15px;
-}
+    /* HEADER */
+    header {
+      background-color: var(--azul-principal);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-/* LOGO (AJUSTE PARA FONDO BLANCO) */
-.logo {
-    width: 180px;
-    background: transparent;
-    mix-blend-mode: multiply;
-    display: block;
-    margin: 0 auto;
-}
+    /* LOGO */
+    .logo img {
+      height: 55px;
+      object-fit: contain;
+    }
 
-/* HERO */
-.hero {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: #FFFFFF;
-}
+    /* MENÚ */
+    nav a {
+      color: var(--blanco);
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
 
-.hero h1 {
-    color: #2A4B7C;
-    font-size: 34px;
-}
+    nav a:hover {
+      color: var(--amarillo);
+    }
 
-.hero p {
-    font-size: 18px;
-    color: #333;
-}
+    /* HERO */
+    .hero {
+      padding: 80px 40px;
+      text-align: center;
+      background-color: var(--blanco);
+    }
 
-/* BOTÓN */
-.btn {
-    background-color: #34A88E;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-}
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: var(--azul-principal);
+    }
 
-/* SECCIONES */
-.section {
-    padding: 50px 20px;
-    text-align: center;
-}
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
 
-.section h2 {
-    color: #2A4B7C;
-}
+    /* BOTONES */
+    .btn {
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px;
+      display: inline-block;
+    }
 
-/* TARJETAS */
-.cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
-}
+    .btn-primary {
+      background-color: var(--amarillo);
+      color: #000;
+    }
 
-.card {
-    background-color: #FFFFFF;
-    padding: 20px;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
+    .btn-primary:hover {
+      opacity: 0.9;
+    }
 
-/* FOOTER */
-footer {
-    background-color: #2A4B7C;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-</style>
+    .btn-secondary {
+      background-color: var(--verde);
+      color: var(--blanco);
+    }
 
+    .btn-secondary:hover {
+      opacity: 0.9;
+    }
+
+    /* SECCIÓN GENERAL */
+    section {
+      padding: 60px 40px;
+    }
+
+    .section-light {
+      background-color: var(--blanco);
+    }
+
+    .section-gray {
+      background-color: var(--gris-fondo);
+    }
+
+  </style>
 </head>
 
 <body>
 
-<!-- NAV -->
-<nav>
-    <img src="logo.png" alt="NeXsv Logo" class="logo" onerror="this.style.display='none'">
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-    <h1>Conecta, compra y crece</h1>
-    <p>Red de negocios para padres de colegios privados en El Salvador</p>
-
-    <a href="#" target="_blank">
-        <button class="btn">Únete ahora</button>
-    </a>
-</section>
-
-<!-- COMO FUNCIONA -->
-<section class="section">
-    <h2>¿Cómo funciona?</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Regístrate</h3>
-            <p>Crea tu perfil como padre emprendedor.</p>
-        </div>
-        <div class="card">
-            <h3>Publica</h3>
-            <p>Comparte tu negocio con la comunidad.</p>
-        </div>
-        <div class="card">
-            <h3>Conecta</h3>
-            <p>Genera ventas dentro de la red.</p>
-        </div>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <!-- CAMBIA AQUÍ TU LOGO -->
+      <img src="logo.png" alt="Logo">
     </div>
-</section>
 
-<!-- BENEFICIOS -->
-<section class="section">
-    <h2>Beneficios</h2>
-    <div class="cards">
-        <div class="card">✔ Clientes confiables</div>
-        <div class="card">✔ Comunidad privada</div>
-        <div class="card">✔ Más ventas sin publicidad</div>
-    </div>
-</section>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#">Nosotros</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
 
-<!-- FOOTER -->
-<footer>
-    <p>© 2026 NeXsv - Todos los derechos reservados</p>
-</footer>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Tu mensaje principal aquí</h1>
+    <p>Describe claramente lo que ofreces y el valor para el usuario.</p>
+
+    <a href="#" class="btn btn-primary">Comenzar</a>
+    <a href="#" class="btn btn-secondary">Más información</a>
+  </section>
+
+  <!-- SECCIÓN -->
+  <section class="section-gray">
+    <h2>Sección de contenido</h2>
+    <p>Aquí puedes agregar más información sobre tu servicio o producto.</p>
+  </section>
 
 </body>
 </html>
